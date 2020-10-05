@@ -1,0 +1,58 @@
+// nombre d'opérations
+12
+
+// noms opérations
+obtention d'un permis d'exploitation
+établissement d'une piste de 6km
+installation d'une deux sondeuses
+création des bâtiments provisoires
+goudronnage de la piste
+conduction d'eau
+campagne de sondage
+équipement des puits
+transport et exploitation du matériel d'exploitation
+construction des bureaux
+aménagement du fond
+construction d'une laverie
+
+// durées
+120
+180
+30
+30
+60
+90
+240
+180
+30
+240
+360
+240
+
+// contraintes de précédence
+0 -1
+1 -1
+2 -1
+2 -1
+2 -1
+-1
+0 -1
+4 5 6 7 -1
+8 10 -1
+4 5 6 7 -1
+8 10 -1
+8 10 -1
+
+// contraintes de temps
+-1
+-1
+0 400 -1
+0 400 -1
+0 400 -1
+0 450 2 50 -1
+-1
+-1
+-1
+-1
+-1
+-1
