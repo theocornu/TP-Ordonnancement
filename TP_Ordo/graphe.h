@@ -1,6 +1,9 @@
+#include <iostream>
+#include <fstream>
+#include <string>
 #pragma once
 
-const int NBMAX_SOMMETS = 210; // nb max de sommmets du graphe
+const int NBMAX_SOMMETS = 13; // nb max de sommmets du graphe
 const int NBMAX_SUCC = 10; // nb max de successeurs par sommet
 const int INF = 9999;
 
@@ -8,7 +11,9 @@ const int INF = 9999;
 typedef struct graphe_t {
 	int n; // nombre de sommets
 	int s[NBMAX_SOMMETS + 1][NBMAX_SUCC + 1]; // s[i][j] => j-ieme successeur de i
-	int duree[NBMAX_SOMMETS + 1][NBMAX_SUCC + 1]; // cout de l'arc s[i][j]
+	int duree[NBMAX_SOMMETS + 1]; // durée de l'opération duree[i]
+	int l[NBMAX_SOMMETS + 1][NBMAX_SUCC + 1]; // cout de l'arc s[i][j]
+	std::string nomOperation[NBMAX_SOMMETS + 1];
 	int ns[NBMAX_SOMMETS + 1]; // nombre de successeurs d'un sommet
 }graphe_t;
 

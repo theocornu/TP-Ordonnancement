@@ -1,6 +1,5 @@
 // nombre d'opérations
 12
-
 // noms opérations
 obtention d'un permis d'exploitation
 établissement d'une piste de 6km
@@ -14,7 +13,6 @@ transport et exploitation du matériel d'exploitation
 construction des bureaux
 aménagement du fond
 construction d'une laverie
-
 // durées
 120
 180
@@ -28,7 +26,6 @@ construction d'une laverie
 240
 360
 240
-
 // contraintes de précédence
 0 -1
 1 -1
@@ -42,7 +39,6 @@ construction d'une laverie
 4 5 6 7 -1
 8 10 -1
 8 10 -1
-
 // contraintes de temps
 -1
 -1
