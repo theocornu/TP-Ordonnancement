@@ -8,7 +8,7 @@ const int INF = 9999;
 typedef struct graphe_t {
 	int n; // nombre de sommets
 	int s[NBMAX_SOMMETS + 1][NBMAX_SUCC + 1]; // s[i][j] => j-ieme successeur de i
-	int l[NBMAX_SOMMETS + 1][NBMAX_SUCC + 1]; // cout de l'arc s[i][j]
+	int duree[NBMAX_SOMMETS + 1][NBMAX_SUCC + 1]; // cout de l'arc s[i][j]
 	int ns[NBMAX_SOMMETS + 1]; // nombre de successeurs d'un sommet
 }graphe_t;
 
